@@ -1,6 +1,6 @@
 import request from 'superagent'
 
-const rootUrl = '/api/v1/issues'
+const rootUrl = '/api/v1/capybara'
 
 // export function getFruits () {
 //   return request.get(rootUrl + '/fruits')
@@ -10,10 +10,14 @@ const rootUrl = '/api/v1/issues'
 // }
 
 export function getIssues () {
-  // return request.get('/api/v1/products')
-  return Promise.resolve([
-    { id: 1, name: 'hiro', facilitator: 'Ahmad', issue: 'need help' },
-    { id: 2, name: 'Ben d', facilitator: 'Ahmad', issue: 'need help' }])
+  return request.get('/api/v1/capybara/issues')
+    .then(res => {
+      console.log(res.body)
+      return res.body
+    })
+  // return Promise.resolve([
+  //   { id: 1, name: 'hiro', facilitator: 'Ahmad', issue: 'need help' },
+  //   { id: 2, name: 'Ben d', facilitator: 'Ahmad', issue: 'need help' }])
 }
 
 export function addNewIssues () {

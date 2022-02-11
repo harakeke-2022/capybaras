@@ -12,14 +12,14 @@ html,
   padding: 0;
 }
 
-/* body {
+body {
   height: 100vh ;
   width: 100%;
   font-family:  "Roboto", sans-serif;
   background-image: url(./issues.jpg);
   background-size: cover;
   background-position: center;
-} */
+}
 button:hover {
   background-color: aqua;
 }
@@ -31,7 +31,7 @@ button:hover {
   align-items: center;
   height: 100vh;
   width: 100%;
-  /* background-color: blue; */
+  background-color: rgba(0, 0, 0, 0.637);
 }
 
 form {
@@ -68,9 +68,10 @@ h2 {
 }
 
 .img {
-  height: 30%;
-  width: 30%;
-  background-size: 200px;
+  height: 40%;
+  width: 50%;
+  background-image: url(./capybara-gang.png);
+  background-size: 310px;
   background-position: center;
 }
 
