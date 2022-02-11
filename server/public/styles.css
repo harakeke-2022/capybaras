@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
-
-html, 
-body {
-  font-family: 'Montserrat', sans-serif;
-}
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap);
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
 
 /* @import url(https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap); */
-
 html,
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 /* body {
   height: 100vh ;
   width: 100%;
@@ -21,10 +20,11 @@ html,
   background-size: cover;
   background-position: center;
 } */
-button:hover{
+button:hover {
   background-color: aqua;
 }
-.app{
+
+.app {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -33,7 +33,8 @@ button:hover{
   width: 100%;
   /* background-color: blue; */
 }
-form{
+
+form {
   height: 40%;
   width: 100%;
   /* border: 2px solid black; */
@@ -43,14 +44,6 @@ form{
   align-items: center;
 }
 
-// h1{
-//   font-family: 'UnifrakturMaguntia', cursive, "Montserrat", sans-serif;
-//   color: rgb(67, 67, 165);
-//   font-size: 60px;
-//   letter-spacing: 0.2em;
-//   text-shadow: 8px 2px 2px black;
-
-// }
 h1 {
   font-size: 80px;
   color: #fff;
@@ -62,27 +55,27 @@ h1 {
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px rgb(26, 23, 204), 0 0 20px #fff, 0 0 30px #06aaeb, 0 0 40px #06aaeb, 0 0 50px #06aaeb, 0 0 60px #06aaeb, 0 0 70px #06aaeb;
+    text-shadow: 0 0 10px #1a17cc, 0 0 20px #fff, 0 0 30px #06aaeb, 0 0 40px #06aaeb, 0 0 50px #06aaeb, 0 0 60px #06aaeb, 0 0 70px #06aaeb;
   }
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #f1c916, 0 0 40px #f1c916, 0 0 50px #f1c916, 0 0 60px #f1c916, 0 0 70px #f1c916, 0 0 80px #f1c916;
   }
 }
-h2{
+h2 {
   color: darkgoldenrod;
   font-size: 30px;
   text-shadow: 2px 2px 2px black;
 }
-.img{
+
+.img {
   height: 30%;
   width: 30%;
-  // background-image: url(./capybara-gang.png);
   background-size: 200px;
   background-position: center;
 }
-/*# sourceMappingURL=styles.css.map*/
 
-button{
+/*# sourceMappingURL=styles.css.map*/
+button {
   position: relative;
   display: inline-block;
   padding: 25px 30px;
@@ -94,49 +87,53 @@ button{
   letter-spacing: 4px;
   overflow: hidden;
   /* margin-right: 50px; */
- 
 }
-button:hover{
+
+button:hover {
   background: #03e9f4;
   color: #050801;
-  box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 200px #03e9f4;
-   -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
-button:nth-child(1){
+
+button:nth-child(1) {
   filter: hue-rotate(270deg);
 }
-button:nth-child(2){
+
+button:nth-child(2) {
   filter: hue-rotate(110deg);
 }
-button span{
+
+button span {
   position: absolute;
   display: block;
 }
-button span:nth-child(1){
+
+button span:nth-child(1) {
   top: 0;
   left: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg,transparent,#03e9f4);
+  background: linear-gradient(90deg, transparent, #03e9f4);
   animation: animate1 1s linear infinite;
 }
-@keyframes animate1{
-  0%{
-      left: -100%;
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
   }
-  50%,100%{
-      left: 100%;
+  50%, 100% {
+    left: 100%;
   }
 }
-button span:nth-child(2){
+button span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg,transparent,#03e9f4);
+  background: linear-gradient(180deg, transparent, #03e9f4);
   animation: animate2 1s linear infinite;
   animation-delay: 0.25s;
 }
+
+/*# sourceMappingURL=styles.css.map*/

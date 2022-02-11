@@ -42,7 +42,7 @@ function Form () {
       <form>
         <h2>Issue Request Form</h2>
         <select onChange={handleChange} name="name" placeholder = 'Select your name'>
-          <option>Select your name</option>
+          <option>Select Your Name</option>
           <option value="BenD">BenD</option>
           <option value="BenA">BenA</option>
           <option value="Campbell">Campbell</option>
@@ -50,7 +50,7 @@ function Form () {
         </select>
 
         <select onChange={handleChange} name="facilitator" placeholder = 'Select facilitator name'>
-          <option>Select facilitator name</option>
+          <option>Select Facilitator Name</option>
           <option value="Ahmad">Ahmad</option>
           <option value="Eleanor">Eleanor</option>
           <option value="Jared">Jared</option>
