@@ -20,8 +20,7 @@ function App () {
     <>
       <div className='app'>
         <h1>Capybara Help Desk</h1>
-        <div className="img">
-        </div>
+        <div className="img" ></div>
         <Form />
         <Routes>
           <Route path ='/list' element = {<List />} />

@@ -1,12 +1,25 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { createNewIssue } from '../actions/issues'
 
 import { useNavigate } from 'react-router-dom'
 
+import { getIssues } from '../apis/issues'
+
 function Form () {
   const dispatch = useDispatch()
   const navigate = useNavigate()
+
+  useEffect(() => {
+    getIssues()
+      .then(apiResponse => {
+        console.log(apiResponse)
+        return null
+      })
+      .catch(err => {
+        console.error(err)
+      })
+  }, [])
 
   const [form, setForm] = useState({
     id: '',
@@ -34,7 +47,7 @@ function Form () {
     }
 
     dispatch(createNewIssue(form))
-    navigate('/')
+    navigate('/list')
   }
 
   return (
