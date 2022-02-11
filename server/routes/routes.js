@@ -3,13 +3,14 @@ const db = require('../db/db')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  res.send('<h1>Good Luck</h1>')
+  console.log('hello')
+  res.json({ name: 'edsfds' })
 })
 
 router.get('/students', (req, res) => {
   db.getStudents()
-    .then(students => {
-      return res.json({ students: students })
+    .then((students) => {
+      return res.json(students)
     })
     .catch(err =>
       console.error(err))

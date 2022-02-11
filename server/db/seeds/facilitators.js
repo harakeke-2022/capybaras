@@ -4,10 +4,10 @@ exports.seed = function (knex) {
     .then(function () {
       // Inserts seed entries
       return knex('facilitators').insert([
-        { faci_id: 1, name: 'Ahmad' },
-        { faci_id: 2, name: 'Prue' },
-        { faci_id: 3, name: 'Eleanor' },
-        { faci_id: 4, name: 'Jared' }
+        { id: 1, name: 'Ahmad' },
+        { id: 2, name: 'Prue' },
+        { id: 3, name: 'Eleanor' },
+        { id: 4, name: 'Jared' }
       ])
     })
 }

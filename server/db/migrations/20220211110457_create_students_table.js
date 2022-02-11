@@ -1,10 +1,10 @@
 exports.up = function (knex) {
   return knex.schema.createTable('students', table => {
     table.increments('id')
-    table.string('student_name')
+    table.string('name')
   })
 }
 
 exports.down = function (knex) {
-  return knex.schema.dropTable('student_name')
+  return knex.schema.dropTable('students')
 }
