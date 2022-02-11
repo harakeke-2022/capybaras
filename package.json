@@ -39,7 +39,8 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "knex": "^0.21.12",
+    "knex": "^0.21.21",
+    "latest": "^0.2.0",
     "pg": "^8.5.1",
     "superagent": "^6.1.0"
   },
